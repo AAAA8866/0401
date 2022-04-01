@@ -1,0 +1,348 @@
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+* {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: black; }
+img {display: block;}
+
+.navBox {
+    width: 1060px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.navBox .gnb {float: right;}
+.navBox .gnb ul {font-size: 0;}
+.navBox .gnb li {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    color: grey;
+    border-right: 1px solid grey;
+    padding: 0 8px;
+    line-height: 11px;
+}
+.navBox .gnb li:last-child {border:none;} /*navbox*/
+
+.innerHeader {
+    background-color: #f5f5f5;
+    height: 80px;}
+
+
+.innerHeader .logoBox {
+    width: 1060px;
+    margin: 0 auto;
+    top: 20px;
+    left: 0;
+    position: relative;
+}
+.innerHeader .logoBox .logo {
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.innerHeader .category {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.innerHeader .gnb2 {
+    float: left;
+}
+.innerHeader .search {
+    float: right;
+}
+
+.innerHeader .gnb2 ul {font-size: 0;}
+.innerHeader .gnb2 li {
+    display: inline-block;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    border-right: 1px solid transparent;
+    padding: 0 8px;
+    line-height: 12px;    
+}
+
+.innerHeader .logoBox .search input[type="search"] {
+    height: 30px;
+    padding: 5px;
+}
+.innerHeader .logoBox .search button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.innerHeader .logoBox .search button i{
+    font-size: 18px;
+}
+
+.lnbBox {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.lnbBox .lnb {
+    width: 1030px;
+    padding: 0 600px;
+}
+
+.lnbBox .lnb li {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 30px;
+    padding:0 30px;
+}
+
+.lnbBox .lnb a {
+    color: #fff;
+}
+
+/* -------------------------header-------------------- */
+
+.wrap {
+    width: 100%;
+    height: 3000px;
+    background:url(../img/bg_img.jpg) repeat-x;
+    /* background-attachment: fixed; */
+}
+/* -------------------------WRAP-------------------- */
+
+#tab01, #tab02, #tab03, #tab04, #tab05 {display: none;}
+
+#tab01:checked~.sheet .sheet01 {display: block;}
+#tab02:checked~.sheet .sheet02 {display: block;}
+#tab03:checked~.sheet .sheet03 {display: block;}
+#tab04:checked~.sheet .sheet04 {display: block;}
+#tab05:checked~.sheet .sheet05 {display: block;}
+
+.visualMain {
+    width: 1060px;
+    height: 530px;
+    margin: 0 auto;
+}
+.sheet div {
+    width: 1060px;
+    height: 480px;
+    display: none;
+}
+.visualMain .labelMain{
+    width: 1060px;
+    height: 50px;   
+    overflow: hidden; 
+}
+.visualMain .labelMain label {
+    display: block;
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 11px;
+    float: left;
+}
+
+#tab01:checked~.labelMain .labMain01 {background-color: red;color: #f2f2f2;}
+#tab02:checked~.labelMain .labMain02 {background-color: red;color: #f2f2f2;}
+#tab03:checked~.labelMain .labMain03 {background-color: red;color: #f2f2f2;}
+#tab04:checked~.labelMain .labMain04 {background-color: red;color: #f2f2f2;}
+#tab05:checked~.labelMain .labMain05 {background-color: red;color: #f2f2f2;}
+
+
+.labelMain label {cursor: pointer;}
+
+/* -------------------------visualMain-------------------- */
+
+
+/* -------------------------content_event-------------------- */
+.content_event {
+    width: 1060px;
+    height: 1180px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.content_event .eventItm .eventItm_left {float: left;width: 530px;height: 1160px;}
+.content_event .eventItm .eventItm_right {float: left;width: 530px;height: 1160px;}
+
+.eventItm .eventItm_left .eventItm_left_top {
+    width: 530px;
+    height: 580px;
+}
+.eventItm .eventItm_left .eventItm_left_bottom {
+    width: 530px;
+    height: 580px;
+}
+.eventItm .eventItm_left .eventItm_left_bottom img {
+    width: 262px;
+    height: 290px;
+    display: inline-block;
+}
+.eventItm .eventItm_left .eventItm_right_top {
+    width: 530px;
+    height: 580px;
+}
+.eventItm .eventItm_left .eventItm_right_bottom {
+    width: 530px;
+    height: 580px;
+}
+.eventItm .eventItm_right .eventItm_right_top img {
+    width: 260px;
+    height: 285px;
+    display: inline-block;
+}
+
+.eventItm .eventItm_left_bottom:nth-child(n+3) {
+    border-bottom: 0.5px solid grey;
+}
+
+.content_event i:first-child {
+    margin-left: -1100px;
+    float: left;
+}
+.content_event i:last-child {
+    margin-left: 1100px;
+    float: left;
+}
+/* -------------------------TITLE BOX-------------------- */
+.titleBox {
+    width: 1060px;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.titleBox .title {
+    height: 50px;
+    float: left;
+    left:0;
+    text-align: center;
+    line-height: 50px;
+}
+
+.titleBox .bar{
+    float: right;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+#bar01, #bar02, #bar03, #bar04, #bar05 {display: none;}
+#bar01:checked~.barMain .lab01 {background-color: red;}
+#bar02:checked~.barMain .lab02 {background-color: red;}
+#bar03:checked~.barMain .lab03 {background-color: red;}
+#bar04:checked~.barMain .lab04 {background-color: red;}
+#bar05:checked~.barMain .lab05 {background-color: red;}
+
+.barMain label {
+    width: 15px;
+    height: 15px;
+    line-height: 10px;
+    display: inline-block;
+    background-color: #ddd;
+    border-radius: 50%;   
+}
+
+
+/* -------------------------ACTIVITY BOX-------------------- */
+.activity {
+    position: relative;    
+}
+.activity .activity_img {
+    width: 1060px;
+    height: 383px;
+    margin: 0 auto;
+}
+.activity .left_arrow {
+    width: 95px;
+    height: 135px;
+    float: left;
+}
+.activity .left_arrow img {
+    position: absolute;
+    top: 130px;
+    left:300px;
+}
+.activity .right_arrow {
+    width: 95px;
+    height: 135px;
+    float: right;
+}
+.activity .right_arrow img {
+    position: absolute;
+    top: 130px;
+    right:300px;
+}
+
+/* -------------------------ARRIVAL BOX-------------------- */
+
+#arrival_bar01, #arrival_bar02{display: none;}
+#arrival_bar01:checked~.arrival_sheet .arrival_sheet01 {display:block;}
+#arrival_bar01:checked~.arrival_sheet .arrival_sheet02 {display:none;}
+#arrival_bar02:checked~.arrival_sheet .arrival_sheet01 {display:none;}
+#arrival_bar02:checked~.arrival_sheet .arrival_sheet02 {display:block;}
+
+.arrivalMain label {
+    width: 20px;
+    height: 10px;
+    line-height: 10px;
+    cursor: pointer;  
+    /* display: none; */
+}
+
+.arrival_sheet {
+    width: 1060px;
+    height: 1060px;
+    margin: 0 auto;
+    background: #ccc;
+}
+
+.arrival_sheet li {
+    width: 265px;
+    height: 275px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    float: left;
+    transition: 0.3s;
+}
+
+
+/* -------------------------TOP BUTTON-------------------- */
+.btnTop {
+    width: 80px;
+    height:60px;
+    background-color: #f5f5f5;
+    color: #444;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+    position: fixed;
+    bottom: 300px;
+    right: 50px;
+    cursor: pointer;
+    border: 1px solid grey;
+}
+
+.btnTop p {
+    height: 20px;
+    line-height: 20px;
+}
+
+.btnTop i {
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.btnTop .txt {
+    height: 20px;
+    line-height: 20px;
+    background-color:#444;
+    color: #fff;
+}
+
+
